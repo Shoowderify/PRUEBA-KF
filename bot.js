@@ -9,9 +9,18 @@ client.on('ready', () => {
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('pongoooo!');
-    client.channels.get(#eee).send('My Message');
+   
   }
 });
+
+client.channles.get(#eee)('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('pongiioo!');
+   
+  }
+});
+
+
 
 client.on('message', msg => {
   if (msg.content === 'NA: Double lux active!') {
