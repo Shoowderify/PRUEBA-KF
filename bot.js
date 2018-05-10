@@ -14,6 +14,12 @@ client.on('message', msg => {
 });
 
 
+client.on('message', msg => {
+  if (msg.content === 'peng') {
+     client.channels.get(eee).send('My Message'); 
+  }
+});
+
 
 
 
