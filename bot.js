@@ -36,9 +36,9 @@ galleta1 = "./galletas/galleta1.jpg"; galleta2 = "./galletas/galleta2.jpg";  gal
     number = 3;
     var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
     switch (random) {
-      case 1: msg.channel.send({ files:[galleta1]});
-      case 2: msg.channel.send({ files:[galleta2]});
-      case 3: msg.channel.send({ files:[galleta3]});
+      case 1: msg.channel.send({ files:[galleta1]}); break;
+      case 2: msg.channel.send({ files:[galleta2]}); break;
+      case 3: msg.channel.send({ files:[galleta3]}); break;
         }
   }
 
