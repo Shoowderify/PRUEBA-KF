@@ -31,16 +31,7 @@ client.on('message', msg => {
   }
 });
 
-galleta1 = "PRUEBA-KF/galletas/galleta1.jpg"; galleta2 = "PRUEBA-KF/galletas/galleta2.jpg";  galleta3 = "PRUEBA-KF/galletas/galleta3.jpg"; 
-  if (msg.includes ("!galleta")) {
-    number = 3;
-    var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
-    switch (random) {
-      case 1: msg.channel.send({ files:[galleta1]}); break;
-      case 2: msg.channel.send({ files:[galleta2]}); break;
-      case 3: msg.channel.send({ files:[galleta3]}); break;
-        }
-  }
+
 
 
 client.login('NDQzOTAyNjE0ODgzNzk0OTQ1.DdUICg.HynWumr_L-sRAuQkpgosLC_8llQ');
