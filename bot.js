@@ -6,15 +6,6 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('guildMemberAdd', member => {
-    member.guild.channels.get('127500279846273026').send('**' + member.user.username + '**, Bienvenido!'); 
-});
-
-client.on('guildMemberRemove', member => {
-    member.guild.channels.get('127500279846273026').send('**' + member.user.username + '**, has left the server');
-    //
-});
-
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
