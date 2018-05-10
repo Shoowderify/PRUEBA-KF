@@ -13,7 +13,16 @@ client.on('message', msg => {
   }
 });
 
-
+client.on('message', function(message) {
+    // Now, you can use the message variable inside
+    if (message.content === "$loop") { 
+        var interval = setInterval (function () {
+            // use the message's channel (TextChannel) to send a new message
+            message.channel.send("HOLA")
+            .catch(console.error); // add error handling here
+        }, 1 * 10000); 
+    }
+});
 
 
 client.on('message', msg => {
