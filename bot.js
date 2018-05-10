@@ -7,13 +7,10 @@ client.on('ready', () => {
 });
 
 
-client.on('message', message => {
-
-        if (message.channel.id === 275336796466839553)) {
- if (msg.content === 'pong') {
-    msg.send('pongoooo!');
-        }
- }
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('pongoooo!');
+  }
 });
 
 
