@@ -9,6 +9,7 @@ client.on('ready', () => {
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('pongoooo!');
+    client.channels.get(#eee).send('My Message');
   }
 });
 
