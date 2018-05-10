@@ -31,7 +31,7 @@ client.on('message', msg => {
   }
 });
 
-galleta1 = "./galletas/galleta1.jpg"; galleta2 = "./galletas/galleta2.jpg";  galleta3 = "./galletas/galleta3.jpg"; 
+galleta1 = "PRUEBA-KF/galletas/galleta1.jpg"; galleta2 = "PRUEBA-KF/galletas/galleta2.jpg";  galleta3 = "PRUEBA-KF/galletas/galleta3.jpg"; 
   if (msg.includes ("!galleta")) {
     number = 3;
     var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
