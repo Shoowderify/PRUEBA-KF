@@ -13,12 +13,7 @@ client.on('message', msg => {
   }
 });
 
-client.channles.get(#eee)('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('pongiioo!');
-   
-  }
-});
+
 
 
 
