@@ -14,6 +14,15 @@ client.on('message', msg => {
 });
 
 
+client.on('message', message => {
+
+        if (message.channel.id === 275336796466839553)) {
+ if (msg.content === 'pong') {
+    msg.send('pongoooo!');
+        }
+ }
+});
+
 
 
 
