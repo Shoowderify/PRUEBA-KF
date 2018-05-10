@@ -34,11 +34,11 @@ client.on('message', msg => {
 galleta1 = "./galletas/galleta1.jpg"; galleta2 = "./galletas/galleta2.jpg";  galleta3 = "./galletas/galleta3.jpg"; 
   if (msg.includes ("!galleta")) {
     number = 3;
-    var random = math.floor (math.random() * (number - 1 + 1)) + 1;
+    var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
     switch (random) {
-      case 1: message.channel.send({ files:[galleta1]});
-      case 2: message.channel.send({ files:[galleta2]});
-      case 3: message.channel.send({ files:[galleta3]});
+      case 1: msg.channel.send({ files:[galleta1]});
+      case 2: msg.channel.send({ files:[galleta2]});
+      case 3: msg.channel.send({ files:[galleta3]});
         }
   }
 
