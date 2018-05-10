@@ -7,7 +7,6 @@ client.on('ready', () => {
 });
 
 
-
 client.on('message', message => {
 
         if (message.channel.id === 275336796466839553)) {
@@ -16,7 +15,6 @@ client.on('message', message => {
         }
  }
 });
-
 
 
 
