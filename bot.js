@@ -13,11 +13,13 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', message => {
 
-client.on('message', msg => {
-  if (msg.content === 'peng') {
-     client.channels.get(eee).send('My Message'); 
-  }
+        if (message.channel.id === 275346465549975552)) {
+ if (msg.content === 'pong') {
+    msg.reply('pongoooo!');
+        }
+
 });
 
 
