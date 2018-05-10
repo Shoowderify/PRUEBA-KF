@@ -31,6 +31,16 @@ client.on('message', msg => {
   }
 });
 
+galleta1 = "/galletas/galleta1.jpg"; galleta2 = "/galletas/galleta2.jpg";  galleta3 = "/galletas/galleta3.jpg"; 
+  if (msg.includes ("!galleta")) {
+    number = 3;
+    var random = math.floor (math.random() * (number - 1 + 1)) + 1;
+    switch (random) {
+      case 1: message.channel.send({ files:[galleta1]});
+      case 2: message.channel.send({ files:[galleta2]});
+      case 3: message.channel.send({ files:[galleta3]});
+        }
+  }
 
 
 client.login('NDQzOTAyNjE0ODgzNzk0OTQ1.DdUICg.HynWumr_L-sRAuQkpgosLC_8llQ');
