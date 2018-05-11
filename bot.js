@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-bot.on('ready', () => { bot.user.setGame('KHUX') })
+client.on('ready', () => { bot.user.setGame('KHUX') })
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
