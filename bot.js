@@ -7,7 +7,14 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-
+if (command === "commandname"){
+    let allowedRole = message.guild.roles.find("name", "rolename");
+    if (message.member.roles.has(allowedRole.id) {
+        // allowed access to command
+    } else {
+       // not allowed access
+    }
+}
 client.on('message', msg => {
   if (msg.content === 'ping') {
     msg.reply('pongoooo!');
@@ -35,4 +42,4 @@ client.on('message', msg => {
 
 
 
-client.login('NDQzOTAyNjE0ODgzNzk0OTQ1.DdUICg.HynWumr_L-sRAuQkpgosLC_8llQ');
+client.login('NDQ0NTk0NDMxOTk2NDYxMDU4.DdeMWQ.6TTHeEUvaFcI-uDcXl1J_8HJ-Vw');
